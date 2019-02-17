@@ -1,8 +1,8 @@
 {
-  "name": "react-scripts",
+  "name": "react-scripts-linaria",
   "version": "2.1.5",
-  "description": "Configuration and scripts for Create React App.",
-  "repository": "facebook/create-react-app",
+  "description": "Configuration and scripts for Create React App + Linaria webpack configuration.",
+  "repository": "github:nellh/create-react-app-linaria",
   "license": "MIT",
   "engines": {
     "node": ">=6"
