@@ -108,6 +108,7 @@ module.exports = function(api, opts, env) {
         },
       ],
       isTypeScriptEnabled && [require('@babel/preset-typescript').default],
+      require('linaria/babel').default,
     ].filter(Boolean),
     plugins: [
       // Strip flow types before any other transform, emulating the behavior
