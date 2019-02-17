@@ -391,6 +391,15 @@ module.exports = function(webpackEnv) {
                 compact: isEnvProduction,
               },
             },
+            // Process Linaria CSS
+            {
+              test: /\.(js|mjs|jsx|ts|tsx)$/,
+              include: paths.appSrc,
+              loader: require.resolve('linaria/loader'),
+              options: {
+                sourceMap: process.env.NODE_ENV !== 'production',
+              },
+            },
             // Process any JS outside of the app with Babel.
             // Unlike the application JS, we only compile the standard ES features.
             {
